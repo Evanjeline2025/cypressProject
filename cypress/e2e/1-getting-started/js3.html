@@ -1,0 +1,34 @@
+<h2>Guess the number that machine has created</h2>
+<input type="text" id="name" name="name" placeholder="Enter your Guess number" />
+<button onclick="check()"> Check</button>
+<p1 id="res">Results .......... Here!!!!!!!!! </p1>
+
+
+<script>
+    var randoomMachineno = Math.random()
+    var systemno = Math.floor(randoomMachineno * 10)
+    console.log("system generetaed no :" + systemno);
+
+
+
+
+
+    function check() {
+            console.log("system generetaed no :" + systemno);
+                var userno = document.getElementById("name").value;
+
+                    console.log("user generetaed no :" + userno);
+
+
+        if (userno == systemno) {
+            document.getElementById("res").innerText = "You guessed right"
+
+        }
+        else {
+            document.getElementById("res").innerText = "You guessed wrong"
+
+        }
+    }
+
+
+</script>
