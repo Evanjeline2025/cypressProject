@@ -1,5 +1,6 @@
 context('Login test path', () => {
     it('Test the login with css path', () => {
+      cy.visit('http://localhost:8080/js3.html');
 
         cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
         
